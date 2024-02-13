@@ -1,33 +1,51 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+img {
+	display: block;
+	max-width: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.title {
+	animation: revealTitle 1s linear 0.5s forwards, translateText linear;
+	animation-timeline: auto, scroll();
+	transform: translateY(-20px);
+	opacity: 0;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.title strong {
+	animation: revealTitle 1s linear 1s forwards;
+	transform: translateY(-20px);
+	opacity: 0;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.animated_text {
+	animation: revealSectionTitle linear;
+	animation-timeline: view();
+	animation-range-start: 100px;
+	animation-range-end: 300px;
+	animation-fill-mode: forwards;
+	transform: translateX(-20px);
+	opacity: 0;
+}
+
+@keyframes translateText {
+	100% {
+		transform: translateY(900px);
+	}
+}
+
+@keyframes revealTitle {
+	to {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+@keyframes revealSectionTitle {
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }

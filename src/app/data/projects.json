@@ -1,0 +1,62 @@
+[
+	{
+		"title": "Axeptio",
+		"color": "#F46983",
+		"subtitle": "Taste by Axeptio - Landing Page",
+		"text": "<em>Freelance</em> - Réalisation de la landing page de l'outil Taste by Axeptio, une extension navigateur de gestion du consentement. Développé seul en collaboration avec l'équipe en charge du design, et sur une semaine. Intégrations de plusieurs animations SVG complexes avec Lottie, interaction avec certaines de ces animations.<br/>Stack: Next.js, Styled-components, Lottie",
+		"image": "/images/axeptio.png",
+		"gradient": "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(243,94,123,1) 100%)",
+		"link": "https://taste.axept.io/",
+		"theme": "light"
+	},
+	{
+		"title": "Ornikar",
+		"color": "#624DE1",
+		"subtitle": "Assurance-auto - Parcours de souscription",
+		"text": "<em>Freelance</em> - Refonte du parcours de souscription à l'assurance automobile d'Ornikar, dans le cadre d'une campagne d'AB Testing.<br/>Stack: React - Typescript - Styled Components - xState<br/>Utilisation de Flagship pour la gestion de l'AB Test. Utilisation de xState pour la gestion d'état, et l'affichage des différents écrans en fonction de la progression dans le parcours.",
+		"image": "/images/ornikar.png",
+		"gradient": "linear-gradient(180deg, rgba(95,74,225,1) 0%, rgba(253,233,233,1) 100%)",
+		"link": "https://ornikar.com/assurance-auto/souscription",
+		"theme": "light"
+	},
+	{
+		"title": "Office Français pour la Biodiversité",
+		"color": "#87a147",
+		"subtitle": "Biodiversité - Les bons gestes",
+		"text": "<em>Alternance</em> - Développement de deux pages pour l'Office Français pour la Biodiversité via mon entreprise d'alternance, l'agence parisienne TBWA.<br/>Stack: Next.js, Javascript, SCSS et CSS modules",
+		"image": "/images/ofb.png",
+		"gradient": "linear-gradient(180deg, rgba(165,203,74,1) 0%, rgba(244,245,240,1) 100%)",
+		"link": "https://agirbiodiversite.ofb.fr/",
+		"theme": "light"
+	},
+	{
+		"title": "Le Puy du Fou",
+		"color": "#1F6981",
+		"subtitle": "Le Grand Tour - Landing page",
+		"text": "<em>Freelance</em> - Développement pour le Puy du Fou via l'agence Appstud d'une landing page pour la présentation du projet Le Grand Tour.<br/>Stack: Next.js, Typescript, Styled components, GSAP pour la création de frises d'images animées et interactives.<br/>Le projet actuel a partiellement changé depuis mon intervention.",
+		"image": "/images/puydufou.png",
+		"gradient": "linear-gradient(180deg, rgba(252,250,231,1) 0%, rgba(51,112,134,1) 100%)",
+		"link": "https://www.legrandtour.com/",
+		"theme": "light"
+	},
+	{
+		"title": "antoninbarbier.com",
+		"color": "#FFF",
+		"subtitle": "Site web personnel",
+		"text": "Ma page personnelle, simple et minimaliste pour présenter mes réseaux sociaux, et qui a été l'occasion pour moi d'expérimenter Three.js en combinaison avec react-three-fiber pour une utilisation avec React.",
+		"image": "/images/antoninbarbier.png",
+		"gradient": "linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(30,36,46,1) 100%)",
+		"link": "https://antoninbarbier.com/",
+		"theme": "dark"
+	},
+	{
+		"title": "LaMaR",
+		"color": "#4386c6",
+		"subtitle": "Plans d'Occupation des Sols Historiques et Archéologiques",
+		"text": "<em>Alternance</em> - Un projet un petit peu daté (2019) mais qui représente mon expérience la plus pertinente en développement back-end, et particulièrement en PHP : la mise en place from scratch d'une interface d'accès et de gestion de données historiques et archéologiques. Développé avec Laravel (appris sur le fil pour l'occasion) + Blade et Bootstrap, et mise en place d'un CRUD de données archéologiques, authentification, gestion de GeoJson pour l'affichage de données sur carte (Leaflet.js)...",
+		"image": "/images/lamar.png",
+		"gradient": "linear-gradient(180deg, rgba(67,134,198,1) 0%, rgba(255,255,255,1) 100%)",
+		"link": "https://lamar.huma-num.fr/",
+		"theme": "light"
+	}
+]
