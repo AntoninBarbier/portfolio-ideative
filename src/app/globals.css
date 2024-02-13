@@ -8,16 +8,18 @@ img {
 }
 
 .title {
-	animation: revealTitle 1s linear 0.5s forwards, translateText linear;
+	animation: revealTitle 0.5s ease-out 0.5s forwards, translateText linear;
 	animation-timeline: auto, scroll();
-	transform: translateY(-20px);
+	transform: translate3D(0, -20px, 0);
 	opacity: 0;
+	will-change: transform, opacity;
 }
 
 .title strong {
-	animation: revealTitle 1s linear 1s forwards;
-	transform: translateY(-20px);
+	animation: revealTitle 1s ease-out 1s forwards;
+	transform: translate3D(0, -30px, 0);
 	opacity: 0;
+	will-change: transform, opacity;
 }
 
 .animated_text {
@@ -26,19 +28,20 @@ img {
 	animation-range-start: 100px;
 	animation-range-end: 300px;
 	animation-fill-mode: forwards;
-	transform: translateX(-20px);
+	transform: translate3D(-20px, 0, 0);
 	opacity: 0;
+	will-change: transform, opacity;
 }
 
 @keyframes translateText {
 	100% {
-		transform: translateY(900px);
+		transform: translate3D(0, 900px, 0);
 	}
 }
 
 @keyframes revealTitle {
 	to {
-		transform: translateY(0px);
+		transform: translate3d(0, 0, 0);
 		opacity: 1;
 	}
 }
@@ -46,6 +49,6 @@ img {
 @keyframes revealSectionTitle {
 	to {
 		opacity: 1;
-		transform: translateX(0);
+		transform: translate3D(0, 0, 0);
 	}
 }
