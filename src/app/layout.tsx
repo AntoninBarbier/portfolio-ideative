@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='fr'>
-			<body className={`${dm_serif_display.variable} ${open_sans.variable} font-sans mb-28`}>{children}</body>
+			<body className={`${dm_serif_display.variable} ${open_sans.variable} font-sans`}>{children}</body>
 		</html>
 	)
 }

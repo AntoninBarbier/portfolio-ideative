@@ -10,7 +10,7 @@ const Button = ({ children, href }: ButtonProps) => {
 	return (
 		<a
 			href={href}
-			target='blank'
+			target='_blank'
 			className={`${styles.button} inline-block animated_text font-serif font-bold underline font-merriweather p-3 self-start`}
 		>
 			{children}

@@ -7,48 +7,81 @@ img {
 	max-width: 100%;
 }
 
-.title {
-	animation: revealTitle 0.5s ease-out 0.5s forwards, translateText linear;
-	animation-timeline: auto, scroll();
-	transform: translate3D(0, -20px, 0);
-	opacity: 0;
-	will-change: transform, opacity;
+.wrapper {
+	@apply w-[calc(100%-3rem)] md:w-[calc(100%-6rem)] mx-auto;
 }
 
-.title strong {
-	animation: revealTitle 1s ease-out 1s forwards;
-	transform: translate3D(0, -30px, 0);
-	opacity: 0;
-	will-change: transform, opacity;
-}
+/* Animation handling */
 
-.animated_text {
-	animation: revealSectionTitle linear;
-	animation-timeline: view();
-	animation-range-start: 100px;
-	animation-range-end: 300px;
-	animation-fill-mode: forwards;
-	transform: translate3D(-20px, 0, 0);
-	opacity: 0;
-	will-change: transform, opacity;
-}
-
-@keyframes translateText {
-	100% {
-		transform: translate3D(0, 900px, 0);
+@media (prefers-reduced-motion: no-preference) {
+	.title {
+		animation: revealTitle 0.5s ease-out 0.5s forwards, translateText linear;
+		animation-timeline: auto, scroll();
+		transform: translate3D(0, -20px, 0);
+		opacity: 0;
+		will-change: transform, opacity;
 	}
-}
 
-@keyframes revealTitle {
-	to {
-		transform: translate3d(0, 0, 0);
-		opacity: 1;
+	.title strong {
+		animation: revealTitle 1s ease-out 1s forwards;
+		transform: translate3D(0, -30px, 0);
+		position: relative;
+		width: fit-content;
+		margin-inline: auto;
+		display: block;
+		opacity: 0;
+		will-change: transform, opacity;
 	}
-}
 
-@keyframes revealSectionTitle {
-	to {
-		opacity: 1;
-		transform: translate3D(0, 0, 0);
+	.title strong::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: -20px;
+		width: 0%;
+		height: 2px;
+		background-color: black;
+		animation: fillUnderline linear;
+		animation-fill-mode: forwards;
+		animation-range: 400px;
+		/* animation-range-end: exit; */
+		animation-timeline: view();
+	}
+
+	.animated_text {
+		animation: revealSectionTitle linear;
+		animation-timeline: view();
+		animation-range-start: 100px;
+		animation-range-end: 300px;
+		animation-fill-mode: forwards;
+		transform: translate3D(-20px, 0, 0);
+		opacity: 0;
+		will-change: transform, opacity;
+	}
+
+	@keyframes translateText {
+		100% {
+			transform: translate3D(0, 900px, 0);
+		}
+	}
+
+	@keyframes revealTitle {
+		to {
+			transform: translate3d(0, 0, 0);
+			opacity: 1;
+		}
+	}
+
+	@keyframes revealSectionTitle {
+		to {
+			opacity: 1;
+			transform: translate3D(0, 0, 0);
+		}
+	}
+
+	@keyframes fillUnderline {
+		to {
+			width: 100%;
+		}
 	}
 }

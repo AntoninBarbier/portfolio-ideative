@@ -15,7 +15,7 @@ interface ProjectSectionProps {
 const ProjectSection = ({ image, title, color, subtitle, text, gradient, link, theme }: ProjectSectionProps) => {
 	return (
 		<div
-			className='w-[calc(100%-3rem)] md:w-[calc(100%-6rem)] grid grid-cols-1 lg:grid-cols-2 p-8 md:p-28 mx-auto mb-6 md:mb-12 rounded-3xl items-center justify-center gap-12 md:gap-20'
+			className='wrapper grid grid-cols-1 lg:grid-cols-2 p-8 md:p-28 mb-6 md:mb-12 rounded-3xl items-center justify-center gap-12 md:gap-20'
 			style={{
 				background: gradient,
 				color: theme === 'light' ? '#000000' : '#FFFFFF',
