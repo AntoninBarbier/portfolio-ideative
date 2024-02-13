@@ -1,5 +1,6 @@
 import ProjectSection from './components/ProjectSection'
 import Projects from './data/projects.json'
+import Image from 'next/image'
 
 export default function Home() {
 	return (
@@ -22,6 +23,9 @@ export default function Home() {
 						Antonin Barbier
 					</a>
 				</p>
+				<a href='https://github.com/AntoninBarbier/portfolio-ideative' target='_blank'>
+					<Image className='w-[20px] h-[20px]' src='/images/logos/github-mark.svg' width={20} height={20} alt='Github logo' />
+				</a>
 				<p>Stack: Next.js / TaildwindCSS / Vercel deployment</p>
 			</footer>
 		</>
